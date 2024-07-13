@@ -1,0 +1,116 @@
+<div style="display: flex; flex-direction: column; background-color: #f5f5f5;">
+  <!-- Menu -->
+  <div style="background-color: #fff; color: white; padding: 10px; display: flex; align-items: center; justify-content: space-between; border-radius: 0px 0px 10px 10px; position: fixed;width: 100%; ">
+
+    <!-- Logo JW -->
+    <div style="display: flex; align-items: center;">
+      <div style="font-size: 24px; font-weight: bold; margin-right: 10px; color: #F36825">JW</div>
+      <div>
+        <i class="ph ph-list" (click)="abrirMenu()" style="font-size: 25px; color: #3B4CB8; cursor: pointer;"></i>
+      </div>
+    </div>
+  
+    <!-- Menu Hambúrguer -->
+   
+  
+    <!-- Informações do Usuário -->
+    <div style="display: flex; align-items: center;">
+      <div style="margin-right: 12px;">
+        <div (click)="abrirMeuPerfil()">
+          <span style="font-weight: 700; color: #000; cursor: pointer;">Joab Teste</span>
+        </div>
+        <div style="text-align: end;">
+          <span style="text-align: end; color: #000">Admin</span>
+        </div>
+      </div>
+      <div>
+        <div (click)="abrirMeuPerfil()" style="background-color: #F36825; padding: 8px; border-radius: 10px; cursor: pointer;">
+          <i class="ph ph-user" style="font-size: 25px;"></i>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+
+  <!-- Card -->
+  <div style="width: 100%; display: flex; justify-content: center; margin-top: 60px;">
+    <div class="presentation-card">
+      <div>
+        <i class="ph ph-laptop" style="font-size: 50px;"></i>
+      </div>
+      <div>
+        <span style="font-size: 30px; font-weight: bold;">Apresentação</span>
+      </div>
+      <div>
+        <button class="download-button" (click)="PDF()">
+          <span style="color: #fff; font-size: 15px; font-weight: 100;">Dowland .PDF</span>
+        </button>
+      </div>
+    </div>
+    
+  </div>
+<div>
+  
+</div>
+
+  <!-- TradingView Widgets -->
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 10px;">
+    <!-- Seção de Monitoramento de Ações -->
+    <div class="widget">
+      <div class="widget-title">
+        <div class="widget-title-text">
+          <span>Monitoramento de Ações</span>
+        </div>
+        <div class="widget-title-info">
+          
+          <a (click)="info()" style="cursor: pointer;">
+            <i class="ph ph-caret-right"></i>
+            info
+          </a>
+        </div>
+      </div>
+      <div class="widget-content">
+        <div class="tradingview-widget-container" id="widget1">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Monitoramento de Criptomoedas -->
+    <div class="widget">
+      <div class="widget-title">
+        <div class="widget-title-text">
+          <span>Monitoramento de Criptomoedas</span>
+        </div>
+        <div class="widget-title-info">
+          
+          <a (click)="info()" style="cursor: pointer;">
+            <i class="ph ph-caret-right"></i>
+            info
+          </a>
+        </div>
+      </div>
+      <div class="widget-content">
+        <div class="tradingview-widget-container" id="widget2">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button (click)="voltarLogin()" style="padding: 10px; background-color: #F36825; border-radius: 5px; border: none;">
+        <span style="color: #fff">Voltar para a login</span>
+      </button>
+    </div>
+</div>
+
+  
+  
+</div>

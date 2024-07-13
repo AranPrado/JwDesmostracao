@@ -1,0 +1,29 @@
+<div class="container">
+
+
+
+<div class="login-container">
+  <h2>Faça seu login</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" [(ngModel)]="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Senha:</label>
+      <div style="display: flex; align-items: center;">
+        <input [type]="showPassword ? 'text' : 'password'" [(ngModel)]="passWord" id="password" name="password" required>
+      <div (click)="togglePasswordVisibility()">
+        <i *ngIf="showPassword" class="ph ph-eye"></i>
+        <i *ngIf="!showPassword" class="ph ph-eye-slash"></i>
+      </div>
+      </div>
+      
+    </div>
+    <div class="form-group">
+      <button (click)="validarUsuario(email, passWord)" type="submit">Confirmar</button>
+    </div>
+  </form>
+</div>
+
+</div>
